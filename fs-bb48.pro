@@ -34,7 +34,7 @@ RptD_Y=100
 RptLab=1
 LabSize=60
 [eeschema/libraries]
-LibName1=fs-lbb48
+LibName1=fs-bb48
 LibName2=power
 LibName3=conn
 LibName4=device
