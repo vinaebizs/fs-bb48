@@ -1,8 +1,11 @@
-EESchema-DOCLIB  Version 2.0  Date: Wed Jan 13 16:35:20 2016
+EESchema-DOCLIB  Version 2.0
 #
-$CMP CONN_5
-D Symbole general de connecteur
-K CONN
+$CMP +3V3
+K POWER, PWR
+$ENDCMP
+#
+$CMP C
+D Unpolarized capacitor
 $ENDCMP
 #
 $CMP EMIF02-USB03F2
@@ -11,16 +14,28 @@ K USB ESD EMI filter
 F http://www.st.com/web/en/resource/technical/document/datasheet/CD00042880.pdf
 $ENDCMP
 #
+$CMP FILTER
+D Filtre EMI
+K EMI
+$ENDCMP
+#
+$CMP GND
+K POWER, PWR
+$ENDCMP
+#
+$CMP LED
+K LED
+$ENDCMP
+#
 $CMP MKL27Z256VFM4
 D Kinetis KL27Z 48MHz Cortex-M0+
 K USB Cortex-M0+ Kinetis
 F http://cache.nxp.com/files/32bit/doc/data_sheet/KL27P64M48SF6.pdf
 $ENDCMP
 #
-$CMP NUF2030XV6
-D USB Upstream Terminator with ESD Protection
-K USB ESD Terminator
-F http://www.onsemi.com/pub/Collateral/NUF2030XV6-D.PDF
+$CMP R
+D Resistor
+K R DEV
 $ENDCMP
 #
 #End Doc Library

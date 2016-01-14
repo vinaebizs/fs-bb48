@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/gniibe/work/gnuk/fs-bb48/fs-bb48.sch</source>
+    <date>Thu 14 Jan 2016 12:59:38 PM JST</date>
+    <tool>Eeschema 4.0.0~rc1a-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date>13 jan 2016</date>
+        <source>fs-bb48.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U2">
+      <value>EMIF02-USB03F2</value>
+      <libsource lib="fs-bb48" part="EMIF02-USB03F2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5695E3AB</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>MKL27Z256VFM4</value>
+      <footprint>Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm</footprint>
+      <libsource lib="fs-bb48" part="MKL27Z256VFM4"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>568F7373</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>2.2uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="fs-bb48" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5695EAD3</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="fs-bb48" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5695EAE2</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="fs-bb48" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5695EAF1</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>2.2uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="fs-bb48" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5695EB00</tstamp>
+    </comp>
+    <comp ref="FB1">
+      <value>330Ohm</value>
+      <footprint>Inductors_NEOSID:Neosid_Inductor_SM0603CG</footprint>
+      <libsource lib="fs-bb48" part="FILTER"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5695EDFA</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LEDs:LED-0603</footprint>
+      <libsource lib="fs-bb48" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5695EE84</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>510R</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="fs-bb48" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5695EE95</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1M</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="fs-bb48" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5695EEA4</tstamp>
+    </comp>
+    <comp ref="T1">
+      <value>TOUCH_PAD</value>
+      <libsource lib="fs-bb48" part="TOUCH_PAD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56972751</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>SWD</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <libsource lib="fs-bb48" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56972C62</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>PWR</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
+      <libsource lib="fs-bb48" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5697320D</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>USB</value>
+      <libsource lib="fs-bb48" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56973BD9</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>EXT</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04</footprint>
+      <libsource lib="fs-bb48" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>56973E49</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="fs-bb48" part="LED">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="MKL27Z256VFM4">
+      <description>Kinetis KL27Z 48MHz Cortex-M0+</description>
+      <docs>http://cache.nxp.com/files/32bit/doc/data_sheet/KL27P64M48SF6.pdf</docs>
+      <footprints>
+        <fp>*QFN*32*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MKL27Z256VFM4</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PTE0" type="BiDi"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="USB0_DP" type="BiDi"/>
+        <pin num="4" name="USB0_DM" type="BiDi"/>
+        <pin num="5" name="VOUT33" type="power_out"/>
+        <pin num="6" name="VREGIN" type="power_in"/>
+        <pin num="7" name="VDDA" type="power_out"/>
+        <pin num="8" name="VSSA" type="power_in"/>
+        <pin num="10" name="SWD_CLK" type="input"/>
+        <pin num="13" name="SWD_DIO" type="BiDi"/>
+        <pin num="15" name="VDD" type="power_in"/>
+        <pin num="16" name="VSS" type="power_in"/>
+        <pin num="19" name="RESET" type="input"/>
+        <pin num="20" name="PTB0" type="output"/>
+        <pin num="21" name="PTB1" type="output"/>
+        <pin num="29" name="PTD4" type="output"/>
+        <pin num="30" name="PTD5" type="output"/>
+        <pin num="31" name="PTD6" type="output"/>
+        <pin num="32" name="PTD7" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="TOUCH_PAD">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">TOUCH_PAD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="EMIF02-USB03F2">
+      <description>EMI filter including ESD protection</description>
+      <docs>http://www.st.com/web/en/resource/technical/document/datasheet/CD00042880.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">EMIF02-USB03F2</field>
+      </fields>
+      <pins>
+        <pin num="B3" name="VBUS" type="power_in"/>
+        <pin num="C1" name="D+in" type="BiDi"/>
+        <pin num="C3" name="D+out" type="BiDi"/>
+        <pin num="D1" name="D-in" type="BiDi"/>
+        <pin num="D2" name="GND" type="power_in"/>
+        <pin num="D3" name="D-out" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="FILTER">
+      <description>Filtre EMI</description>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">FILTER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="CONN_01X02">
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="CONN_01X04">
+      <footprints>
+        <fp>Pin_Header_Straight_1X04</fp>
+        <fp>Pin_Header_Angled_1X04</fp>
+        <fp>Socket_Strip_Straight_1X04</fp>
+        <fp>Socket_Strip_Angled_1X04</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="fs-bb48">
+      <uri>/home/gniibe/work/gnuk/fs-bb48/fs-bb48.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(U1-Pad4)">
+      <node ref="U2" pin="D3"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="2" name="Net-(R2-Pad2)">
+      <node ref="U1" pin="21"/>
+      <node ref="T1" pin="1"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="3" name="Net-(P1-Pad3)">
+      <node ref="U2" pin="C1"/>
+      <node ref="P1" pin="3"/>
+    </net>
+    <net code="4" name="Net-(D1-Pad2)">
+      <node ref="R1" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="5" name="Net-(P4-Pad3)">
+      <node ref="P4" pin="3"/>
+      <node ref="U1" pin="31"/>
+    </net>
+    <net code="6" name="Net-(FB1-Pad1)">
+      <node ref="P1" pin="1"/>
+      <node ref="FB1" pin="1"/>
+    </net>
+    <net code="7" name="Net-(P1-Pad2)">
+      <node ref="P1" pin="2"/>
+      <node ref="U2" pin="D1"/>
+    </net>
+    <net code="8" name="GND">
+      <node ref="U1" pin="2"/>
+      <node ref="U2" pin="D2"/>
+      <node ref="P2" pin="4"/>
+      <node ref="U1" pin="16"/>
+      <node ref="U1" pin="8"/>
+      <node ref="P1" pin="4"/>
+      <node ref="P3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="9" name="Net-(P4-Pad4)">
+      <node ref="P4" pin="4"/>
+      <node ref="U1" pin="32"/>
+    </net>
+    <net code="10" name="Net-(P4-Pad2)">
+      <node ref="U1" pin="30"/>
+      <node ref="P4" pin="2"/>
+    </net>
+    <net code="11" name="Net-(P4-Pad1)">
+      <node ref="P4" pin="1"/>
+      <node ref="U1" pin="29"/>
+    </net>
+    <net code="12" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="13" name="Net-(P2-Pad3)">
+      <node ref="P2" pin="3"/>
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="14" name="Net-(P2-Pad2)">
+      <node ref="P2" pin="2"/>
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="15" name="Net-(P2-Pad1)">
+      <node ref="U1" pin="19"/>
+      <node ref="P2" pin="1"/>
+    </net>
+    <net code="16" name="+3V3">
+      <node ref="R1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="P3" pin="1"/>
+      <node ref="U1" pin="15"/>
+      <node ref="U1" pin="7"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="17" name="Net-(U1-Pad1)">
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="18" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+      <node ref="U2" pin="C3"/>
+    </net>
+    <net code="19" name="Net-(C1-Pad1)">
+      <node ref="U1" pin="6"/>
+      <node ref="U2" pin="B3"/>
+      <node ref="FB1" pin="2"/>
+      <node ref="C1" pin="1"/>
+    </net>
+  </nets>
+</export>
