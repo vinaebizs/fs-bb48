@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/gniibe/work/gnuk/fs-bb48/fs-bb48.sch</source>
-    <date>Thu 14 Jan 2016 12:59:38 PM JST</date>
+    <source>/home/gniibe/work/fs-bb48/fs-bb48.sch</source>
+    <date>Thu 14 Jan 2016 07:56:26 PM JST</date>
     <tool>Eeschema 4.0.0~rc1a-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -21,6 +21,7 @@
   <components>
     <comp ref="U2">
       <value>EMIF02-USB03F2</value>
+      <footprint>fs-bb48:BGA-11</footprint>
       <libsource lib="fs-bb48" part="EMIF02-USB03F2"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5695E3AB</tstamp>
@@ -61,7 +62,7 @@
       <tstamp>5695EB00</tstamp>
     </comp>
     <comp ref="FB1">
-      <value>330Ohm</value>
+      <value>330ohm</value>
       <footprint>Inductors_NEOSID:Neosid_Inductor_SM0603CG</footprint>
       <libsource lib="fs-bb48" part="FILTER"/>
       <sheetpath names="/" tstamps="/"/>
@@ -90,6 +91,7 @@
     </comp>
     <comp ref="T1">
       <value>TOUCH_PAD</value>
+      <footprint>fs-bb48:TOUCH_PAD_9mm</footprint>
       <libsource lib="fs-bb48" part="TOUCH_PAD"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56972751</tstamp>
@@ -110,6 +112,7 @@
     </comp>
     <comp ref="P1">
       <value>USB</value>
+      <footprint>fs-bb48:usb-PCB</footprint>
       <libsource lib="fs-bb48" part="CONN_01X04"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>56973BD9</tstamp>
@@ -123,6 +126,42 @@
     </comp>
   </components>
   <libparts>
+    <libpart lib="fs-bb48" part="EMIF02-USB03F2">
+      <description>EMI filter including ESD protection</description>
+      <docs>http://www.st.com/web/en/resource/technical/document/datasheet/CD00042880.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">EMIF02-USB03F2</field>
+      </fields>
+      <pins>
+        <pin num="B3" name="VBUS" type="power_in"/>
+        <pin num="C1" name="D+in" type="BiDi"/>
+        <pin num="C3" name="D+out" type="BiDi"/>
+        <pin num="D1" name="D-in" type="BiDi"/>
+        <pin num="D2" name="GND" type="power_in"/>
+        <pin num="D3" name="D-out" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="FILTER">
+      <description>Filtre EMI</description>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">FILTER</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="TOUCH_PAD">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">TOUCH_PAD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="fs-bb48" part="LED">
       <footprints>
         <fp>LED-3MM</fp>
@@ -140,6 +179,55 @@
       <pins>
         <pin num="1" name="K" type="passive"/>
         <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="CONN_01X02">
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="CONN_01X04">
+      <footprints>
+        <fp>Pin_Header_Straight_1X04</fp>
+        <fp>Pin_Header_Angled_1X04</fp>
+        <fp>Socket_Strip_Straight_1X04</fp>
+        <fp>Socket_Strip_Angled_1X04</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="fs-bb48" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="fs-bb48" part="MKL27Z256VFM4">
@@ -174,42 +262,6 @@
         <pin num="32" name="PTD7" type="output"/>
       </pins>
     </libpart>
-    <libpart lib="fs-bb48" part="TOUCH_PAD">
-      <fields>
-        <field name="Reference">T</field>
-        <field name="Value">TOUCH_PAD</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="fs-bb48" part="EMIF02-USB03F2">
-      <description>EMI filter including ESD protection</description>
-      <docs>http://www.st.com/web/en/resource/technical/document/datasheet/CD00042880.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">EMIF02-USB03F2</field>
-      </fields>
-      <pins>
-        <pin num="B3" name="VBUS" type="power_in"/>
-        <pin num="C1" name="D+in" type="BiDi"/>
-        <pin num="C3" name="D+out" type="BiDi"/>
-        <pin num="D1" name="D-in" type="BiDi"/>
-        <pin num="D2" name="GND" type="power_in"/>
-        <pin num="D3" name="D-out" type="BiDi"/>
-      </pins>
-    </libpart>
-    <libpart lib="fs-bb48" part="FILTER">
-      <description>Filtre EMI</description>
-      <fields>
-        <field name="Reference">FB</field>
-        <field name="Value">FILTER</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="fs-bb48" part="C">
       <description>Unpolarized capacitor</description>
       <footprints>
@@ -228,59 +280,10 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="fs-bb48" part="CONN_01X02">
-      <footprints>
-        <fp>Pin_Header_Straight_1X02</fp>
-        <fp>Pin_Header_Angled_1X02</fp>
-        <fp>Socket_Strip_Straight_1X02</fp>
-        <fp>Socket_Strip_Angled_1X02</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X02</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="fs-bb48" part="R">
-      <description>Resistor</description>
-      <footprints>
-        <fp>R_*</fp>
-        <fp>Resistor_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">R</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="fs-bb48" part="CONN_01X04">
-      <footprints>
-        <fp>Pin_Header_Straight_1X04</fp>
-        <fp>Pin_Header_Angled_1X04</fp>
-        <fp>Socket_Strip_Straight_1X04</fp>
-        <fp>Socket_Strip_Angled_1X04</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X04</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-        <pin num="4" name="P4" type="passive"/>
-      </pins>
-    </libpart>
   </libparts>
   <libraries>
     <library logical="fs-bb48">
-      <uri>/home/gniibe/work/gnuk/fs-bb48/fs-bb48.lib</uri>
+      <uri>/home/gniibe/work/fs-bb48/fs-bb48.lib</uri>
     </library>
   </libraries>
   <nets>
