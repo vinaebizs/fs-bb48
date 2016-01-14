@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/gniibe/work/gnuk/fs-bb48/fs-bb48.sch)
-    (date "Thu 14 Jan 2016 12:59:06 PM JST")
+    (date "Thu 14 Jan 2016 03:16:49 PM JST")
     (tool "Eeschema 4.0.0~rc1a-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,6 +17,7 @@
   (components
     (comp (ref U2)
       (value EMIF02-USB03F2)
+      (footprint fs-bb48:BGA-11)
       (libsource (lib fs-bb48) (part EMIF02-USB03F2))
       (sheetpath (names /) (tstamps /))
       (tstamp 5695E3AB))
@@ -76,6 +77,7 @@
       (tstamp 5695EEA4))
     (comp (ref T1)
       (value TOUCH_PAD)
+      (footprint fs-bb48:TOUCH_PAD_9mm)
       (libsource (lib fs-bb48) (part TOUCH_PAD))
       (sheetpath (names /) (tstamps /))
       (tstamp 56972751))
@@ -93,6 +95,7 @@
       (tstamp 5697320D))
     (comp (ref P1)
       (value USB)
+      (footprint fs-bb48:usb-PCB)
       (libsource (lib fs-bb48) (part CONN_01X04))
       (sheetpath (names /) (tstamps /))
       (tstamp 56973BD9))
@@ -103,6 +106,63 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 56973E49)))
   (libparts
+    (libpart (lib fs-bb48) (part C)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib fs-bb48) (part CONN_01X04)
+      (footprints
+        (fp Pin_Header_Straight_1X04)
+        (fp Pin_Header_Angled_1X04)
+        (fp Socket_Strip_Straight_1X04)
+        (fp Socket_Strip_Angled_1X04))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X04))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))))
+    (libpart (lib fs-bb48) (part CONN_01X02)
+      (footprints
+        (fp Pin_Header_Straight_1X02)
+        (fp Pin_Header_Angled_1X02)
+        (fp Socket_Strip_Straight_1X02)
+        (fp Socket_Strip_Angled_1X02))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X02))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))))
+    (libpart (lib fs-bb48) (part R)
+      (description Resistor)
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib fs-bb48) (part TOUCH_PAD)
+      (fields
+        (field (name Reference) T)
+        (field (name Value) TOUCH_PAD))
+      (pins
+        (pin (num 1) (name P1) (type passive))))
     (libpart (lib fs-bb48) (part LED)
       (footprints
         (fp LED-3MM)
@@ -146,12 +206,6 @@
         (pin (num 30) (name PTD5) (type output))
         (pin (num 31) (name PTD6) (type output))
         (pin (num 32) (name PTD7) (type output))))
-    (libpart (lib fs-bb48) (part TOUCH_PAD)
-      (fields
-        (field (name Reference) T)
-        (field (name Value) TOUCH_PAD))
-      (pins
-        (pin (num 1) (name P1) (type passive))))
     (libpart (lib fs-bb48) (part EMIF02-USB03F2)
       (description "EMI filter including ESD protection")
       (docs http://www.st.com/web/en/resource/technical/document/datasheet/CD00042880.pdf)
@@ -172,58 +226,7 @@
         (field (name Value) FILTER))
       (pins
         (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib fs-bb48) (part C)
-      (description "Unpolarized capacitor")
-      (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) C))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib fs-bb48) (part CONN_01X02)
-      (footprints
-        (fp Pin_Header_Straight_1X02)
-        (fp Pin_Header_Angled_1X02)
-        (fp Socket_Strip_Straight_1X02)
-        (fp Socket_Strip_Angled_1X02))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X02))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
-    (libpart (lib fs-bb48) (part R)
-      (description Resistor)
-      (footprints
-        (fp R_*)
-        (fp Resistor_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib fs-bb48) (part CONN_01X04)
-      (footprints
-        (fp Pin_Header_Straight_1X04)
-        (fp Pin_Header_Angled_1X04)
-        (fp Socket_Strip_Straight_1X04)
-        (fp Socket_Strip_Angled_1X04))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X04))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive)))))
+        (pin (num 2) (name 2) (type passive)))))
   (libraries
     (library (logical fs-bb48)
       (uri /home/gniibe/work/gnuk/fs-bb48/fs-bb48.lib)))
