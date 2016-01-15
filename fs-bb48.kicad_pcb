@@ -3,7 +3,7 @@
   (general
     (links 37)
     (no_connects 0)
-    (area 126.416999 100.828999 161.567001 113.039001)
+    (area 122.827 95.395 164.390619 116.799)
     (thickness 2)
     (drawings 8)
     (tracks 190)
@@ -61,6 +61,7 @@
     (pad_size 2 2)
     (pad_drill 2)
     (pad_to_mask_clearance 0.2)
+    (solder_mask_min_width 0.1)
     (aux_axis_origin 154.94 106.68)
     (grid_origin 154.94 106.68)
     (visible_elements 7FFFFB97)
