@@ -1,11 +1,18 @@
-NUF2030XV6 or NUF2042XV6
-	USB terminator with ESD protection
-
-NCP103
-	150mA CMOS LDO
-
-PKMCS0909E4000
-	Piezoelectric sounder
+* main
 
 MKL27Z256VFM4
 	MCU Kinetis L 32-bit
+
+* options
+
+Ferrite Bead
+	Z=330ohm
+	0603
+
+NUP2114UPXV5T1G
+	Transient Voltage Suppressors
+	SOT-553
+	http://www.onsemi.com/pub_link/Collateral/NUP2114-D.PDF
+
+PKMCS0909E4000
+	Piezoelectric sounder

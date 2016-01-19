@@ -8,12 +8,6 @@ $CMP C
 D Unpolarized capacitor
 $ENDCMP
 #
-$CMP EMIF02-USB03F2
-D EMI filter including ESD protection
-K USB ESD EMI filter
-F http://www.st.com/web/en/resource/technical/document/datasheet/CD00042880.pdf
-$ENDCMP
-#
 $CMP FILTER
 D Filtre EMI
 K EMI
@@ -31,6 +25,12 @@ $CMP MKL27Z256VFM4
 D Kinetis KL27Z 48MHz Cortex-M0+
 K USB Cortex-M0+ Kinetis
 F http://cache.nxp.com/files/32bit/doc/data_sheet/KL27P64M48SF6.pdf
+$ENDCMP
+#
+$CMP NUP2114
+D ESD protection
+K USB ESD
+F http://www.onsemi.com/pub_link/Collateral/NUP2114-D.PDF
 $ENDCMP
 #
 $CMP R
