@@ -1,4 +1,4 @@
-update=Fri 15 Jan 2016 07:55:36 PM JST
+update=Wed 20 Jan 2016 10:17:20 AM JST
 version=1
 last_client=kicad
 [general]
@@ -6,11 +6,6 @@ version=1
 [cvpcb]
 version=1
 NetIExt=net
-[eeschema]
-version=1
-LibDir=
-[eeschema/libraries]
-LibName1=fs-bb48
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -40,3 +35,8 @@ SolderMaskMinWidth=0.09999999999999999
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
+[eeschema]
+version=1
+LibDir=
+[eeschema/libraries]
+LibName1=fs-bb48

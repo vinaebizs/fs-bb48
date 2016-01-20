@@ -17,6 +17,11 @@ $CMP GND
 K POWER, PWR
 $ENDCMP
 #
+$CMP Jumper_NC_Small
+D Jumper normally close
+K Jumper, Link
+$ENDCMP
+#
 $CMP LED
 K LED
 $ENDCMP
