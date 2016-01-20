@@ -1,18 +1,23 @@
 * main
 
-MKL27Z256VFM4
-	MCU Kinetis L 32-bit
+MCU
+	Freescale (NXP)
+	Kinetis L 32-bit
+	MKL27Z256VFM4
+
 
 * options
 
 Ferrite Bead
 	Z=330ohm
 	0603
+	Murata
+	BLM18AG331SN1
 
-NUP2114UPXV5T1G
-	Transient Voltage Suppressors
+Transient Voltage Suppressors
+	NUP2114UPXV5T1G
 	SOT-553
 	http://www.onsemi.com/pub_link/Collateral/NUP2114-D.PDF
 
-PKMCS0909E4000
-	Piezoelectric sounder
+Piezoelectric sounder
+	PKMCS0909E4000

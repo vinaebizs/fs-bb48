@@ -1,6 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:fs-bb48
-LIBS:fs-bb48-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -83,20 +82,9 @@ F 3 "~" H 6350 5200 60  0000 C CNN
 $EndComp
 $Comp
 L C C3
-U 1 1 5695EAE2
-P 6650 5200
-F 0 "C3" H 6650 5300 40  0000 L CNN
-F 1 "0.1uF" H 6656 5115 40  0000 L CNN
-F 2 "fs-bb48:C_0402" H 6688 5050 30  0001 C CNN
-F 3 "~" H 6650 5200 60  0000 C CNN
-	1    6650 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C4
 U 1 1 5695EAF1
 P 6875 3400
-F 0 "C4" H 6875 3500 40  0000 L CNN
+F 0 "C3" H 6875 3500 40  0000 L CNN
 F 1 "0.1uF" H 6881 3315 40  0000 L CNN
 F 2 "fs-bb48:C_0402" H 6913 3250 30  0001 C CNN
 F 3 "~" H 6875 3400 60  0000 C CNN
@@ -106,12 +94,12 @@ $EndComp
 $Comp
 L C C1
 U 1 1 5695EB00
-P 5950 5200
-F 0 "C1" H 5950 5300 40  0000 L CNN
-F 1 "2.2uF" H 5956 5115 40  0000 L CNN
-F 2 "fs-bb48:C_0603" H 5988 5050 30  0001 C CNN
-F 3 "~" H 5950 5200 60  0000 C CNN
-	1    5950 5200
+P 6000 5200
+F 0 "C1" H 6000 5300 40  0000 L CNN
+F 1 "2.2uF" H 6006 5115 40  0000 L CNN
+F 2 "fs-bb48:C_0603" H 6038 5050 30  0001 C CNN
+F 3 "~" H 6000 5200 60  0000 C CNN
+	1    6000 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -298,8 +286,6 @@ Text Label 5400 5825 0    60   ~ 0
 D-_
 Text Label 5200 5825 0    60   ~ 0
 D+_
-Text Label 6050 6150 0    60   ~ 0
-VBUS_
 Text Label 5800 5375 2    60   ~ 0
 VBUS
 Text Label 7300 3950 0    60   ~ 0
@@ -349,7 +335,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 4550 6500 4600
 Wire Wire Line
-	4125 4850 5950 4850
+	4125 4850 6000 4850
 Wire Wire Line
 	5650 4550 5650 4700
 Wire Wire Line
@@ -368,13 +354,12 @@ Connection ~ 7150 3150
 Wire Wire Line
 	6350 5350 6350 5450
 Wire Wire Line
-	5950 5450 6650 5450
+	6000 5450 6650 5450
 Wire Wire Line
-	6650 5350 6650 5500
-Connection ~ 6650 5450
+	6650 5450 6650 5500
 Connection ~ 5800 4850
 Wire Wire Line
-	5950 5350 5950 5450
+	6000 5350 6000 5450
 Connection ~ 6350 5450
 Wire Wire Line
 	6875 3550 6875 3600
@@ -385,7 +370,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 6250 5500 6200
 Wire Wire Line
-	5500 6200 6050 6200
+	5500 6200 5800 6200
 Wire Wire Line
 	5800 6200 5800 6100
 Wire Wire Line
@@ -427,7 +412,7 @@ Wire Wire Line
 	5025 2225 5025 2300
 Connection ~ 5500 2300
 Wire Wire Line
-	5950 4850 5950 5050
+	6000 4850 6000 5050
 Wire Wire Line
 	5200 5450 5200 5875
 Wire Wire Line
@@ -451,10 +436,7 @@ Wire Wire Line
 	6200 4700 6200 4950
 Wire Wire Line
 	6350 4950 6350 5050
-Wire Wire Line
-	6650 4950 6650 5050
 Connection ~ 6350 4950
-Connection ~ 6650 4950
 Wire Wire Line
 	6875 3150 6875 3250
 Wire Wire Line
@@ -483,14 +465,6 @@ Wire Wire Line
 	7525 2500 7525 3850
 Wire Wire Line
 	7525 3850 7650 3850
-Wire Wire Line
-	5800 5550 6050 5550
-Wire Wire Line
-	6050 5550 6050 5725
-Wire Wire Line
-	6050 6200 6050 5925
-Connection ~ 5800 6200
-Connection ~ 5800 5550
 $Comp
 L NUP2114 U2
 U 1 1 569E5D4B
@@ -518,17 +492,6 @@ Wire Wire Line
 	5800 4850 5800 4850
 Wire Wire Line
 	5800 4550 5800 5600
-$Comp
-L Jumper_NC_Small JP1
-U 1 1 569EE300
-P 6050 5825
-F 0 "JP1" H 6050 5905 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 6060 5765 50  0001 C CNN
-F 2 "fs-bb48:SOLDER_JUMPER" H 6050 5825 60  0001 C CNN
-F 3 "" H 6050 5825 60  0000 C CNN
-	1    6050 5825
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	4000 6150 4000 5500
 Text Notes 3775 6275 0    60   ~ 0
@@ -540,7 +503,7 @@ Wire Notes Line
 Wire Notes Line
 	5600 5500 5950 5500
 Wire Notes Line
-	5950 6250 5600 6250
+	5600 6250 5950 6250
 Wire Notes Line
 	4000 5500 5075 5500
 Wire Notes Line
@@ -548,7 +511,9 @@ Wire Notes Line
 Wire Notes Line
 	5075 6150 5075 5500
 Wire Notes Line
-	5950 5500 5950 6250
+	5950 6250 5950 5500
 Text Notes 5750 6425 0    60   ~ 0
-Optional ESI filter (ferrite bead)\nRemove JP1 connection if enable.
+Optional Ferrite Bead\n(or connect if none).
+Text Label 5800 6150 2    60   ~ 0
+VBUS_
 $EndSCHEMATC
