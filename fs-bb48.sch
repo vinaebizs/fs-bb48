@@ -530,15 +530,25 @@ F 3 "" H 6050 5825 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Notes Line
-	4000 5500 5950 5500
-Wire Notes Line
-	5950 5500 5950 6150
-Wire Notes Line
-	5950 6150 4000 6150
-Wire Notes Line
 	4000 6150 4000 5500
-Text Notes 3225 5450 0    60   ~ 0
-Optional ESD protection and EMI filter
+Text Notes 3775 6275 0    60   ~ 0
+Optional ESD protection
 Connection ~ 5400 5700
 Connection ~ 5300 6000
+Wire Notes Line
+	5600 5500 5600 6250
+Wire Notes Line
+	5600 5500 5950 5500
+Wire Notes Line
+	5950 6250 5600 6250
+Wire Notes Line
+	4000 5500 5075 5500
+Wire Notes Line
+	4000 6150 5075 6150
+Wire Notes Line
+	5075 6150 5075 5500
+Wire Notes Line
+	5950 5500 5950 6250
+Text Notes 5750 6425 0    60   ~ 0
+Optional ESI filter (ferrite bead)\nRemove JP1 connection if enable.
 $EndSCHEMATC
