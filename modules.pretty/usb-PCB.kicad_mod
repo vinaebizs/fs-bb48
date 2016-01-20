@@ -1,6 +1,6 @@
-(module usb-PCB (layer F.Cu) (tedit 542BB0AF)
+(module usb-PCB (layer F.Cu) (tedit 569EE8E4)
   (attr virtual)
-  (fp_text reference J* (at 0.13 -7.85) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0.13 -7.85) (layer F.SilkS) hide
     (effects (font (size 1.5 1.5) (thickness 0.15)))
   )
   (fp_text value ~ (at 0.29 -10.13) (layer F.SilkS) hide
