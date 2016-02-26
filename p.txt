@@ -5,6 +5,13 @@ MCU
 	Kinetis L 32-bit
 	MKL27Z256VFM4
 
+LED
+	White
+	2.85V
+
+R1
+	510ohm
+
 
 * options
 
