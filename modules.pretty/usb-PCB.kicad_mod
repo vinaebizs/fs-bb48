@@ -1,6 +1,6 @@
-(module usb-PCB (layer F.Cu) (tedit 56D4ED3B)
+(module usb-PCB (layer F.Cu) (tedit 56D909E6)
   (attr virtual)
-  (fp_text reference REF** (at 0.13 -7.85) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0 1.524) (layer F.SilkS) hide
     (effects (font (size 1.5 1.5) (thickness 0.15)))
   )
   (fp_text value ~ (at 0.29 -10.13) (layer F.SilkS) hide
@@ -9,8 +9,8 @@
   (fp_line (start 6.03 0) (end 6.03 -12) (layer Dwgs.User) (width 0.15))
   (fp_line (start 6.03 0) (end -6.03 0) (layer Dwgs.User) (width 0.15))
   (fp_line (start -6.03 0) (end -6.03 -12) (layer Dwgs.User) (width 0.15))
-  (pad 1 connect rect (at 3.81 -4.9) (size 2.286 8) (layers F.Cu F.Mask))
-  (pad 4 connect rect (at -3.81 -4.9) (size 2.286 8) (layers F.Cu F.Mask))
-  (pad 3 connect rect (at -1.0795 -5.3) (size 1.143 7.2) (layers F.Cu F.Mask))
-  (pad 2 connect rect (at 1.0795 -5.3) (size 1.143 7.2) (layers F.Cu F.Mask))
+  (pad 1 connect rect (at 3.5 -5.075) (size 2.2 7.65) (layers F.Cu F.Mask))
+  (pad 4 connect rect (at -3.5 -5.075) (size 2.2 7.65) (layers F.Cu F.Mask))
+  (pad 3 connect rect (at -1 -5.575) (size 1.2 6.65) (layers F.Cu F.Mask))
+  (pad 2 connect rect (at 1 -5.575) (size 1.2 6.65) (layers F.Cu F.Mask))
 )
