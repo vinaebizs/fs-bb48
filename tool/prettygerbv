@@ -81,12 +81,12 @@ run_gerbv()
 front()
 {
 	layers_begin 5
-	layer `choose $NAME Front.gtl F_Cu.gbr` $COPPER
+	layer `choose $NAME Front.gtl F.Cu.gbr` $COPPER
 	[ "$drill" ] && layer $drill $DRILL
-	layer `choose $NAME SoldP_Front.gtp F_Paste.gbr` $PASTE
-	layer `choose $NAME Mask_Front.gts F_Mask.gbr` $INV $MASK
-	layer `choose $NAME SilkS_Front.gto F_SilkS.gbr` $SILK
-	layer `choose $NAME PCB_Edges.gbr Edge_Cuts.gbr` $EDGE
+	layer `choose $NAME SoldP.Front.gtp F.Paste.gbr` $PASTE
+	layer `choose $NAME Mask.Front.gts F.Mask.gbr` $INV $MASK
+	layer `choose $NAME SilkS.Front.gto F.SilkS.gbr` $SILK
+	layer `choose $NAME PCB.Edges.gbr Edge.Cuts.gbr` $EDGE
 	layers_end
 
 	run_gerbv "$1"
@@ -96,12 +96,12 @@ front()
 back()
 {
 	layers_begin 5
-	layer `choose $NAME Back.gbl B_Cu.gbr` $COPPER
+	layer `choose $NAME Back.gbl B.Cu.gbr` $COPPER
 	[ "$drill" ] && layer $drill $DRILL
-	layer `choose $NAME SoldP_Back.gbp B_Paste.gbr` $PASTE
-	layer `choose $NAME Mask_Back.gbs B_Mask.gbr` $INV $MASK
-	layer `choose $NAME SilkS_Back.gbo B_SilkS.gbr` $SILK
-	layer `choose $NAME PCB_Edges.gbr Edge_Cuts.gbr` $EDGE
+	layer `choose $NAME SoldP.Back.gbp B.Paste.gbr` $PASTE
+	layer `choose $NAME Mask.Back.gbs B.Mask.gbr` $INV $MASK
+	layer `choose $NAME SilkS.Back.gbo B.SilkS.gbr` $SILK
+	layer `choose $NAME PCB.Edges.gbr Edge.Cuts.gbr` $EDGE
 	layers_end
 
 	run_gerbv _tmp.png
@@ -113,9 +113,9 @@ back()
 conn()
 {
 	layers_begin 3
-	layer `choose $NAME Back.gbl B_Cu.gbr` $BACK
-	layer `choose $NAME Front.gtl F_Cu.gbr` $FRONT
-	layer `choose $NAME PCB_Edges.gbr Edge_Cuts.gbr` $EDGE2
+	layer `choose $NAME Back.gbl B.Cu.gbr` $BACK
+	layer `choose $NAME Front.gtl F.Cu.gbr` $FRONT
+	layer `choose $NAME PCB.Edges.gbr Edge.Cuts.gbr` $EDGE2
 	layers_end
 
 	run_gerbv "$1"
