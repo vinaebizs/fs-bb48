@@ -1,3 +1,37 @@
+Revision 5
+==========
+
+For PCBA, I selected blue LED (Vf=2.9V).
+
+Moved CE mark.
+
+
+FS-GETA083
+==========
+
+I decided to introduce a plastic part.
+
+
+Change for U2 (for the revision 1,2,3,4)
+========================================
+
+I decided to change U2 by NUP2114UPXV5T1G, for the availability.
+Having two 33R is no problem.
+
+I decided to use Murata's BLM18AG331SN1D  for ferrite bead.
+
+For capacitors, two 2.2uF are used (instead of 2.2uF and 1.0uF).
+
+For 0.1uF capacitors, only one is used.
+
+For LED, I selected white LW Q38E-Q1OO-3K6L-1 (Vf=2.85V).
+
+Extention pins are decided by four pins and it has Vdd and GND.
+
+
+Initial design thought (2016-01)
+================================
+
    * Freescale Kinetis L27Z Cortex-M0+ 48MHz 256KB Flash 32KB SRAM
      KL27Z256VFM4
 
@@ -29,7 +63,7 @@ protection of KL27Z would be equally difficult or more difficult than
 STM32F103TB.
 
 KL27Z256VFM4 includes the voltage regulator for USB, so, we don't need
-care about life cycle of (another) chip of voltage regulator. 
+care about life cycle of (another) chip of voltage regulator.
 
 
 RSA is out of scope for this board.  The branch of Gnuk will be called
